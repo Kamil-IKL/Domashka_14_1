@@ -39,3 +39,6 @@ User9, example9@gmail.com, 90, 500
 Имя: User5 | Почта: example5@gmail.com | Возраст: 50 | Баланс: 500
 Имя: User8 | Почта: example8@gmail.com | Возраст: 80 | Баланс: 1000
 Имя: User9 | Почта: example9@gmail.com | Возраст: 90 | Баланс: 500
+
+
+

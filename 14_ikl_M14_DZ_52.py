@@ -26,9 +26,9 @@ balance INTEGER NOT NULL
 
 cursor.execute("DELETE FROM Users") # стираю все строки в БДешке (для обновления, чтобы не накапливались данные)
 # 1.добавляю с использованием цикла for
-for i in range(10):
+for i in range(1, 11):
     cursor.execute("INSERT INTO Users (username, email, age, balance) VALUES (?, ?, ?, ?)",
-                   (f"User{i + 1}", f"example{i + 1}gmail.com", int(i * 10 + 10), int(1000)))
+                   (f"User{i}", f"example{i}gmail.com", int(i * 10), int(1000)))
 
 # 2.создал запрос на изменение параметра "баланс"
 cursor.execute("UPDATE Users SET balance = ? WHERE ID % 2 = 1", (500,))

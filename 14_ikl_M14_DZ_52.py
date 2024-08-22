@@ -24,7 +24,7 @@ balance INTEGER NOT NULL
 )
 """)
 
-
+cursor.execute("DELETE FROM Users") # стираю все строки в БДешке (для обновления, чтобы не накапливались данные)
 # 1.добавляю с использованием цикла for
 for i in range(10):
     cursor.execute("INSERT INTO Users (username, email, age, balance) VALUES (?, ?, ?, ?)",

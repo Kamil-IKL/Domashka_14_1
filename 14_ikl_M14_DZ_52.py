@@ -24,6 +24,7 @@ balance INTEGER NOT NULL
 )
 """)
 
+
 # 1.добавляю с использованием цикла for
 for i in range(10):
     cursor.execute("INSERT INTO Users (username, email, age, balance) VALUES (?, ?, ?, ?)",
